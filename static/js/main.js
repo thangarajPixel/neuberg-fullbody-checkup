@@ -144,3 +144,41 @@ $(document).ready(function(){
   });
 });
 
+
+$(document).ready(function(){
+  $('.home-icon-box').slick({
+  slidesToShow: 5,
+  dots:false,
+  arrows: true,
+  autoplay: true,
+  autoplaySpeed: 3000,
+  speed: 1200,
+  responsive: [
+      {
+        breakpoint: 1000,
+        settings: {
+          slidesToShow: 4,
+        }
+      },
+       {
+        breakpoint: 800,
+        settings: {
+          slidesToShow: 3,
+        }
+      },
+         {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+        }
+      },
+       {
+        breakpoint: 390,
+        settings: {
+          slidesToShow: 1,
+        }
+      }
+    ]
+  });
+});
+

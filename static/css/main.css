@@ -329,7 +329,11 @@ ul.home-icon-box li{
     font-size: 15px;
     color: var(--text-gray);
     border-radius: 7px;
+    border: solid rgba(0, 0, 0, 0.075) 1px;
+    border-radius: 8px;
+    min-height: 200px;
 }
+
 
 ul.home-icon-box li:hover{
     background: var(--secondary-color);
@@ -340,6 +344,7 @@ ul.home-icon-box li:hover{
 ul.home-icon-box li img{
     transition: all 0.6s ease;
     display: block;
+    width: 40px;
 }
 
 ul.home-icon-box li:hover img{
@@ -425,6 +430,8 @@ ul.home-safety-icon-box li:hover img{
     margin-bottom: 30px;
 }
 
+
+
 .popular-tests-box .slick-track > div{
     text-align: left;
     /* width: 23%; */
@@ -434,7 +441,7 @@ ul.home-safety-icon-box li:hover img{
     font-size: 15px;
     color: var(--text-gray);
     border-radius: 7px;
-    background: #FEF7F3;
+    background: #ffffff;
 }
 
 .popular-tests-box .slick-track > div:hover{
@@ -852,7 +859,7 @@ ul.home-safety-icon-box li:hover img{
     background-size: contain;
     border-radius: 7px;
     overflow: hidden;
-    margin: 50px 0px;
+    margin: 30px 0px;
 }
 
 .form-bg .form-pad{
@@ -1010,6 +1017,20 @@ form .form-send-otp input[type="submit"]:hover, form .form-verify-otp input[type
     bottom: -30px;
     display: flex;
     justify-content: center;
+}
+
+.main-banner .slick-dots{
+    bottom: 15px !important;
+    justify-content: flex-start !important;
+    left: 50px;
+}
+
+.main-banner .container .row{
+    align-items: center;
+}
+
+.main-banner .container .banner-image-carousel{
+    margin-bottom: 0 !important;
 }
 
 .slick-dots li{
@@ -1417,6 +1438,13 @@ footer .location ul li a{
     display: flex;
 }
 
+.package_section{
+    padding-bottom: 0 !important;
+}
+
+.sample_collection{
+    padding-top: 0 !important;
+}
 
 
 @media (max-width: 1500px) {
@@ -1441,9 +1469,7 @@ footer .location ul li a{
         width: 100%;
     }
 
-    .package_section{
- padding-bottom: 70px !important;   
-}
+ 
 
       footer{
         padding: 20px 0px 110px 0px;
@@ -1492,7 +1518,11 @@ footer .location ul li a{
     }
 }
 
-@media (max-width: 1000px) {    
+@media (max-width: 1000px) {  
+    
+    .book_test_container{
+        padding-bottom: 80px !important;
+    }
       .bottom_bar{
         flex-direction: column;
     }
@@ -1563,6 +1593,40 @@ footer .location ul li a{
 
 @media (max-width: 760px) {
 
+    .package_section .text-center.pb-4{
+        padding-bottom: 0 !important;
+        margin-bottom: 0 !important;
+    }
+    
+     .package_section .slick-slide{
+        margin-top: 0 !important;
+    }
+
+    .popular-tests-box .slick-list.draggable{
+    padding-right: 50px;
+}
+    .popular-tests-box .slick-track > div p{
+        min-height: 120px;
+        max-height: unset;
+    }
+    .popular-tests-box .slick-track > div strong{
+        min-height: unset;
+    }
+    .popular-tests-box .slick-track > div span.test_price{
+        float: left;
+    }
+    .popular-tests-box .slick-track > div a{
+        float: right;
+        margin-top: 0;
+    }
+    ul.home-icon-box li{
+        margin: 0 10px;
+    }
+
+      .book_test_container{
+        padding-bottom: 60px !important;
+    }
+
     footer .social_links ul{
     margin-bottom: 24px;
 
@@ -1585,11 +1649,20 @@ footer .location ul li a{
 
     .footer_cards{
         flex-direction: column;
+        align-items: center;
+        text-align: center;
     }
      .footer_cards>div{
         width: 100%;
+        align-items: center;
      }
-
+footer ul li:first-child{
+    display: flex;
+    justify-content: center;
+}
+footer .social_links p{
+    text-align: center;
+}
 
     .radiology_list>div{
             width: calc(33.33% - 14px);
@@ -1832,6 +1905,21 @@ footer .location ul li a{
 }
 
 @media (max-width: 500px){
+    .main-banner .slick-dots {
+    bottom: 6px !important;
+    left: 14px;
+}
+   .popular-tests-box .slick-track > div p{
+        min-height: 110px;
+        line-height: 20px;
+    }
+    ul.home-icon-box li{
+        min-height: 174px;
+    }
+    ul.home-icon-box .slick-prev,
+    ul.home-icon-box .slick-next{
+bottom: -65px;
+    }
       .radiology_list{
         gap: 10px;
       }
