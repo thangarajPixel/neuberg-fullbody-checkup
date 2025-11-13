@@ -50,11 +50,11 @@ if (!empty($request_action)) {
             $phone = '';
             $source = 'Google';
             $secondary_source = "Website - neubergdiagnostics.com";
-            $city = 'Chennai';
+            $city = 'Bengaluru';
             $state = 'Tamil Nadu';
             $ownergroup = 'iSolve';
             $zip = '';
-            $digital_source_name = "Chennai_SEM_Web";
+            $digital_source_name = "Bengaluru_SEM_Web";
             $notes = "Note for the activity";
             // Detect device
             if (preg_match('/(android|webos|iphone|ipad|ipod|blackberry|windows phone)/i', $_SERVER['HTTP_USER_AGENT'])) {
@@ -62,7 +62,7 @@ if (!empty($request_action)) {
             } else {
                 $device_name = "Website-Desktop";
             }
-            $source_page = "STDPanel Chennai";
+            $source_page = "Full Body Health Checkups Bengaluru";
             date_default_timezone_set('Asia/Kolkata');
             $currentDateTime = date('Y-m-d H:i:s');
             // -------- Capture gclid & UTM values --------
@@ -71,7 +71,7 @@ if (!empty($request_action)) {
             $utm_campaign = isset($_POST['utm_campaign']) ? $_POST['utm_campaign'] : '';
             $utm_term   = isset($_POST['utm_term']) ? $_POST['utm_term'] : '';
             $utm_medium = isset($_POST['utm_medium']) ? $_POST['utm_medium'] : '';
-            $webform    = "STDPanel Chennai"; // you can change dynamically if multiple forms exist
+            $webform    = "Full Body Health Checkups Bengaluru"; // you can change dynamically if multiple forms exist
             // -------- NEW API FORMAT --------
             $accessKey = "u\$r8ac1be138c21c3321c9bc9c08dfae9e1";   // Replace with actual key
             $secretKey = "cc60394521a574386998a20654649546cf0dbdb3"; // Replace with actual key
